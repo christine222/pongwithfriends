@@ -10,11 +10,16 @@ import UIKit
 import SpriteKit
 import GameplayKit
 
+
+
 class GameViewController: UIViewController {
 
+    @IBOutlet weak var connectionsLabel: UILabel!
+    let colorService = ColorServiceManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        colorService.delegate = self
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
             if let scene = SKScene(fileNamed: "GameScene") {
@@ -52,4 +57,27 @@ class GameViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
+
+    
+    
+}
+
+
+extension GameViewController : ColorServiceManagerDelegate {
+    
+    func connectedDevicesChanged(manager: ColorServiceManager, connectedDevices: [String]) {
+        OperationQueue.main.addOperation {
+            self.connectionsLabel.text = "Connections: \(connectedDevices)"
+        }
+    }
+    
+    func colorChanged(manager: ColorServiceManager, colorString: Int8) {
+        OperationQueue.main.addOperation {
+            //let scene = GameScene(fileNamed: "GameScene")
+            //scene!.giveEnemyPosition(posX: colorString);
+            
+
+        }
+    }
+    
 }

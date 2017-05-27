@@ -16,6 +16,7 @@
 		1C7940B71EC24CC70010BE21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C7940B61EC24CC70010BE21 /* Assets.xcassets */; };
 		1C7940BA1EC24CC70010BE21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C7940B81EC24CC70010BE21 /* LaunchScreen.storyboard */; };
 		1C7940C21EC260AC0010BE21 /* LLPIXEL3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C7940C11EC260AC0010BE21 /* LLPIXEL3.ttf */; };
+		1CD50BD91ED8E5C300B9238F /* ColorServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD50BD81ED8E5C300B9238F /* ColorServiceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1C7940B91EC24CC70010BE21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C7940BB1EC24CC70010BE21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C7940C11EC260AC0010BE21 /* LLPIXEL3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LLPIXEL3.ttf; sourceTree = "<group>"; };
+		1CD50BD81ED8E5C300B9238F /* ColorServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorServiceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				1C7940AB1EC24CC70010BE21 /* GameScene.sks */,
 				1C7940AD1EC24CC70010BE21 /* Actions.sks */,
 				1C7940AF1EC24CC70010BE21 /* GameScene.swift */,
+				1CD50BD81ED8E5C300B9238F /* ColorServiceManager.swift */,
 				1C7940B11EC24CC70010BE21 /* GameViewController.swift */,
 				1C7940B31EC24CC70010BE21 /* Main.storyboard */,
 				1C7940B61EC24CC70010BE21 /* Assets.xcassets */,
@@ -155,6 +158,7 @@
 				1C7940B01EC24CC70010BE21 /* GameScene.swift in Sources */,
 				1C7940B21EC24CC70010BE21 /* GameViewController.swift in Sources */,
 				1C7940AA1EC24CC70010BE21 /* AppDelegate.swift in Sources */,
+				1CD50BD91ED8E5C300B9238F /* ColorServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

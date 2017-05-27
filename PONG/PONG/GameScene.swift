@@ -79,10 +79,15 @@ class GameScene: SKScene {
         for touch in touches {
             let location = touch.location(in: self)
             main.run(SKAction.moveTo(x: location.x, duration: 0.2))
+            
         }
     }
     
-    override func update(_ currentTime: TimeInterval) {
+    func giveEnemyPosition(posX: Int8) {
+        enemy.position.x = CGFloat(posX);
+    }
+    
+    func update(_ currentTime: TimeInterval, serviceManager: ColorServiceManager) {
         enemy.run(SKAction.moveTo(x: ball.position.x, duration: 1))
         
         if ball.position.y <= main.position.y - 70 {
@@ -90,6 +95,10 @@ class GameScene: SKScene {
         }else if ball.position.y >= enemy.position.y + 70 {
             addScore(playerWhoWon: main)
         }
+        
+        //serviceManager.send(positionX: Int8(main.position.x))
+        
+        
     }
 }
 
